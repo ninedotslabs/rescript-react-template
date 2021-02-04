@@ -1,20 +1,28 @@
 # Rescript React Template
 
-Note that this project template using "Rescript" not "Reason" see [Changes.md](https://github.com/rescript-lang/rescript-react/blob/master/Changes.md)
+#### note: This project template using "Rescript" not "Reason" see [Changes.md](https://github.com/rescript-lang/rescript-react/blob/master/Changes.md).
 
-Install deps
+### Install deps
 
 ```
 npm i
 ```
 
-Start Development
+### Configure env
+
+```
+cp env .env
+```
+
+#### note: change mode to PROD when building project!
+
+### Start Development
 
 ```
 npm run dev
 ```
 
-Build Project
+### Build Project
 
 ```
 npm run prod

@@ -3,5 +3,6 @@ lib/
 node_modules/
 .merlin
 .bsb.lock
+*.env
 *.bs.js
 package-lock.json

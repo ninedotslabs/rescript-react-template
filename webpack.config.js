@@ -1,13 +1,16 @@
 'use strict'
 
+require('dotenv').config()
+
 const path = require('path'),
   webpack = require('webpack'),
   HtmlWebpackPlugin = require('html-webpack-plugin'),
   MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
+let mode = process.env.mode === 'DEV' ? 'development' : 'production';
 
 module.exports = {
-  mode: 'production',
+  mode,
   entry: { 'app': './src/Index.bs.js' },
   output: {
     path: path.resolve(__dirname, './dist/'),
